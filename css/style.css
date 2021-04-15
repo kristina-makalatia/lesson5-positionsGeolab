@@ -1,0 +1,117 @@
+/*pseudo elemnts*/
+.test1::before {
+	content: 'Positions';
+	color: red;
+	background-color: yellow;
+	font-size: 30px;
+}
+/*.test1::after {
+	content: '\2614';
+}*/
+/*.test1::after {
+	content: url(../images/smiley.gif);
+}*/
+.test1::after {
+	content: ' ';
+	width: 2px;
+	height: 30px;
+	background-color: blue;
+	display: inline-block;
+	margin-left: 30px;
+}
+
+body {
+	/*padding-top: 76px;*/
+}
+.section1 {
+	margin-top: 76px;
+}
+/*header styles*/
+.logo {
+	display: inline-block;
+	margin-right: 60px;
+}
+.navigation {
+	display: inline-block;
+}
+.nav-li {
+	display: inline-block;
+	margin-right: 20px;
+}
+.header-wraper {
+	background-color: grey;
+	padding: 30px;
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	z-index: 20;
+}
+
+/*chat icon*/
+.image-chat {
+	height: 100px;
+}
+.chat-icon {
+	position: fixed;
+	right: 30px;
+	bottom: 50px;
+}
+
+/*absolute & relative example*/
+.box-wraper {
+	width: 400px;
+	height: 400px;
+	background-color: yellow;
+	position: relative;
+}
+.child-box {
+	width: 150px;
+	height: 150px;
+	background-color: red;
+	position: absolute;
+	top: 150px;
+	right: 150px;
+	z-index: 8;
+}
+.child-box2 {
+	width: 150px;
+	height: 150px;
+	background-color: blue;
+	position: absolute;
+	top: 180px;
+	right: 180px;
+	z-index: 7;
+}
+.test {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+
+/*Image example*/
+.text-image {
+	position: absolute;
+	top: 50px;
+	right: 100px;
+	color: red;
+}
+.image-wraper {
+	position: relative;
+	/*width: 1170px;*/
+	display: inline-block;
+}
+
+.box-center {
+	width: 500px;
+	background-color: blue;
+	height: 300px;
+/*	margin-right: auto;
+	margin-left: auto;*/
+	margin: 0 auto;
+}
+
+.fashion-image {
+	width: 100%;
+}
